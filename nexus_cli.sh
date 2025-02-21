@@ -2,9 +2,9 @@
 
 # 更新系统并安装必要的开发工具
 echo "更新系统并安装依赖..."
+export DEBIAN_FRONTEND=noninteractive
 sudo apt update
-sudo apt install cmake
-sudo apt install -y build-essential pkg-config libssl-dev git-all
+sudo apt install -y cmake build-essential pkg-config libssl-dev git-all
 
 # 安装协议编译器 (Protobuf)
 echo "安装协议编译器..."
